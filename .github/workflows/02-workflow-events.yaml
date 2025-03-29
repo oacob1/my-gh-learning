@@ -2,7 +2,8 @@ name: 02 - Workflow Events
 on:
 # - push
 # - pull_request
-# - schedule
+  - schedule:
+     - cron: "*/2 * * * *"   
   - workflow_dispatch
 jobs:
   echo:
